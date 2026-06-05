@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class RecommendationSystem {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your favorite category:");
+        System.out.println("1. Java");
+        System.out.println("2. Python");
+        System.out.println("3. Web Development");
+
+        String choice = sc.nextLine();
+
+        System.out.println("\nRecommended Courses:");
+
+        if(choice.equalsIgnoreCase("Java")) {
+            System.out.println("- Advanced Java");
+            System.out.println("- Spring Boot");
+            System.out.println("- Java Projects");
+        }
+        else if(choice.equalsIgnoreCase("Python")) {
+            System.out.println("- Data Science");
+            System.out.println("- Machine Learning");
+            System.out.println("- Python Projects");
+        }
+        else if(choice.equalsIgnoreCase("Web Development")) {
+            System.out.println("- HTML & CSS");
+            System.out.println("- JavaScript");
+            System.out.println("- React JS");
+        }
+        else {
+            System.out.println("- No recommendations available");
+        }
+
+        sc.close();
+    }
+}
